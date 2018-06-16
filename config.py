@@ -1,0 +1,11 @@
+consumer_key = ""
+consumer_secret = ""
+access_token_key = ""
+access_token_secret = ""
+partition_key = "filler"
+stream_name = "stream_tweets"
+tweets_location = '-90,-90,90,90'
+bulk_size = 100
+output_file = "tweets.csv"
+shard_id = "shardId-000000000000"
+shard_iterator_type = "LATEST"
