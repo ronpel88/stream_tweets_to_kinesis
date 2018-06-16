@@ -11,12 +11,14 @@ There are two parts that have been implemented:
 * tweets_consumer
 
 ## Preparations
-In order to run this system, there are a few things that need to be in place:
 
-* To get started, you will need credentials from Twitter to make calls to its public API. For this, go to [Twitter api](apps.twitter.com) and click create a new app and fill out the form to get your unique credentials for making requests from Twitter for their data.
-Once you have your Twitter credentials you can put them in the config file
+In order to run this, there are a few things that need to be in place:
+
+* To get started, you will need credentials from Twitter to make calls to its public API. For this, go to [Twitter api](apps.twitter.com) and click create a new app and fill out the form to get your unique credentials for making requests from Twitter for their data.  
+  Once you have your Twitter credentials you can put them in the config file
 * Create a stream at aws Kinesis
-* Run pip install -r requirements.txt.
+* Run ```bash
+pip install -r requirements.txt```
 
 ### twitter_producer
 
@@ -38,6 +40,7 @@ Once we find a match between tweet and search_expression - we write tweet to csv
 
 
 ## Config file
+
 Configuration file that contain the following variables:
 1. consumer_key
 2. consumer_secret
@@ -54,3 +57,7 @@ Configuration file that contain the following variables:
 ## Running
 
 Start the modules in order, ie first `twitter_producer.py`, then `tweets_consumer.py` with search_expression as an argument 
+
+## Output
+
+Tweets that contain search_expression will be filled into a csv file
