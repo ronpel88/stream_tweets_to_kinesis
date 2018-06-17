@@ -14,7 +14,7 @@ There are two parts that have been implemented:
 
 In order to run this, there are a few things that need to be in place:
 
-* To get started, you will need credentials from Twitter to make calls to its public API. For this, go to [Twitter api](apps.twitter.com) and click create a new app and fill out the form to get your unique credentials for making requests from Twitter for their data.  
+* To get started, you will need credentials from Twitter to make calls to its public API. For this, go to [Twitter api](http://apps.twitter.com) and click create a new app and fill out the form to get your unique credentials for making requests from Twitter for their data.  
   Once you have your Twitter credentials you can put them in the config file
 * Create a stream at aws Kinesis
 * Run ```pip install -r requirements.txt```
